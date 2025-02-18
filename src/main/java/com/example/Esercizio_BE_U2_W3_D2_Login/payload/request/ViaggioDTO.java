@@ -1,7 +1,8 @@
-package com.example.Esercizio_BE_U2_W3_D2_Login.dto;
+package com.example.Esercizio_BE_U2_W3_D2_Login.payload.request;
 
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Dipendente;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.StatoViaggio;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Dipendente;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.StatoViaggio;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

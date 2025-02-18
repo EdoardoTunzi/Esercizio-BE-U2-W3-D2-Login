@@ -1,7 +1,8 @@
 package com.example.Esercizio_BE_U2_W3_D2_Login.controller;
 
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.PrenotazioneDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.service.PrenotazioneService;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.PrenotazioneDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.service.PrenotazioneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

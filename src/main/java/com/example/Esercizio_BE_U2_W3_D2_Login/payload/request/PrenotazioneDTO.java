@@ -1,4 +1,4 @@
-package com.example.Esercizio_BE_U2_W3_D2_Login.dto;
+package com.example.Esercizio_BE_U2_W3_D2_Login.payload.request;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

@@ -1,10 +1,11 @@
 package com.example.Esercizio_BE_U2_W3_D2_Login.service;
 
 
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.PrenotazioneDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.exceptions.NotFoundException;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Prenotazione;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.repository.PrenotazioneDAORepository;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.exceptions.NotFoundException;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Prenotazione;
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.PrenotazioneDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.repository.PrenotazioneDAORepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

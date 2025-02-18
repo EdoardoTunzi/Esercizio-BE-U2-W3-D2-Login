@@ -1,12 +1,13 @@
 package com.example.Esercizio_BE_U2_W3_D2_Login.service;
 
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.ViaggioDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.exceptions.NotFoundException;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Dipendente;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.StatoViaggio;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Viaggio;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.repository.DipendenteDAORepository;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.repository.ViaggioDAORepository;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.exceptions.NotFoundException;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Dipendente;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.StatoViaggio;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Viaggio;
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.ViaggioDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.repository.DipendenteDAORepository;
+import com.example.Esercizio_BE_U2_W3_D2_Login.repository.ViaggioDAORepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

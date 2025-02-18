@@ -2,9 +2,10 @@ package com.example.Esercizio_BE_U2_W3_D2_Login.controller;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.DipendenteDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.PrenotazioneDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.service.DipendenteService;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.DipendenteDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.PrenotazioneDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.service.DipendenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,15 +1,16 @@
 package com.example.Esercizio_BE_U2_W3_D2_Login.service;
 
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.DipendenteDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.PrenotazioneDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.exceptions.BadRequestException;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.exceptions.NotFoundException;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Dipendente;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Prenotazione;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.Viaggio;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.repository.DipendenteDAORepository;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.repository.PrenotazioneDAORepository;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.repository.ViaggioDAORepository;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.exceptions.BadRequestException;
+import com.example.Esercizio_BE_U2_W3_D2_Login.exceptions.NotFoundException;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Dipendente;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Prenotazione;
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.Viaggio;
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.DipendenteDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.PrenotazioneDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.repository.DipendenteDAORepository;
+import com.example.Esercizio_BE_U2_W3_D2_Login.repository.PrenotazioneDAORepository;
+import com.example.Esercizio_BE_U2_W3_D2_Login.repository.ViaggioDAORepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -122,6 +123,16 @@ public class DipendenteService {
             throw new NotFoundException(" L'id del viaggio o del dipendente non è stato trovato");
         }
     }
+
+    // Check campi duplicati
+    public Boolean checkUsername(String username) {
+        return dipendenteRepo.existsByUsername(username);
+    }
+
+    public Boolean checkEmail(String email) {
+        return dipendenteRepo.existsByEmail(email);
+    }
+
 
 
     //--------------------------metodi travaso DTO----------------------

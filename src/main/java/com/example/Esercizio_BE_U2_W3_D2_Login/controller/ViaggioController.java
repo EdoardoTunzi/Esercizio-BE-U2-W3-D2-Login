@@ -1,8 +1,9 @@
 package com.example.Esercizio_BE_U2_W3_D2_Login.controller;
 
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.dto.ViaggioDTO;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.model.StatoViaggio;
-import com.example.ProgettoBE_U2_W2_D5_GestioneViaggiAziendali.service.ViaggioService;
+
+import com.example.Esercizio_BE_U2_W3_D2_Login.model.StatoViaggio;
+import com.example.Esercizio_BE_U2_W3_D2_Login.payload.request.ViaggioDTO;
+import com.example.Esercizio_BE_U2_W3_D2_Login.service.ViaggioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
